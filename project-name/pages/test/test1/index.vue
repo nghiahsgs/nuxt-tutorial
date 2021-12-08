@@ -8,6 +8,10 @@
         <li>
           <NuxtLink to="/test/test2">Test 2</NuxtLink>
         </li>
+
+        <!-- child ..
+        <button @click="handle_click(1)">go to test1</button>
+        <button @click="handle_click(2)">go to test2</button> -->
       </ul>
         <h3>Child 1 (test1)</h3>
     </div>
