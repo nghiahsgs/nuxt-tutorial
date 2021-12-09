@@ -14,3 +14,11 @@
         <h3>Child 2 (test2)</h3>
     </div>
 </template>
+<script>
+export default {
+  created(){
+    // console.log('nghiahsgs000')
+    console.log(this.$hello('nghiahsgszzz'))
+  }
+}
+</script>
