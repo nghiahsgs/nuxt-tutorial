@@ -1,3 +1,9 @@
 h1{
     color: red;
 }
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.nuxt-link-exact-active.nuxt-link-active{
+    color: red;
+}
