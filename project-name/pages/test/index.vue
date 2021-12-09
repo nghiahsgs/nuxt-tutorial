@@ -2,17 +2,20 @@
 <div>
     <h1>day la trang test</h1>
     <ul>
-        <li>
-          <NuxtLink to="/test/test1">Test 1</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/test/test2">Test 2</NuxtLink>
-        </li>
+      <li>
+        <NuxtLink to="/test">Test</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/test/test1">Test 1</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/test/test2">Test 2</NuxtLink>
+      </li>
 
-        <button @click="handle_click(1)">go to test1</button>
-        <button @click="handle_click(2)">go to test2</button>
-      </ul>
-
+      <!-- child .. -->
+      <button @click="handle_click(1)">go to test1</button>
+      <button @click="handle_click(2)">go to test2</button>
+    </ul>
      <nuxt-child/>
 </div>
 </template>
