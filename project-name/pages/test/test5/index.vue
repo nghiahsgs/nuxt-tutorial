@@ -50,7 +50,7 @@ export default {
       const url = 'https://test-app-chat.firebaseio.com/decks2.json'
       const data = {
           "age":"30",
-          "name":"nghiahsgs"
+          "name":"emlamwap"
       }
       const res = await ServiceAxios.post_data_json(url,{},data)
       await this.get_L_data()
