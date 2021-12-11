@@ -33,12 +33,13 @@ export default {
   // xu ly tren server truoc khi tra ve
   asyncData(context) {
     console.log({context})
+    // context.error()
     return new Promise((resolve, reject)=>{
       setTimeout(() => {
         // resolve({
         //   name: "nghiahsgszzz000",
         // });
-        const name = "nghiahsgszzz001"
+        const name = "nghiahsgszzz002"
         context.store.dispatch('setDecksAction',name)    
         resolve({})
         // reject({})

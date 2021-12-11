@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'project-name',
+    title: 'Title default',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,6 +18,10 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap' }
     ]
   },
+  // loading:{
+  //   color:'#fff',height:'10px'
+  // },
+  loading:false,
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -53,5 +57,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  // router: {
+  //   middleware:'router-log'
+  // },
+  server:{
+    port:8000
   }
 }

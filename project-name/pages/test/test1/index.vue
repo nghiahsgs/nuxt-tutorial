@@ -25,6 +25,14 @@
 
 <script>
 export default {
+  head:{
+    title: 'test1',
+  },
+  head(){
+    return {
+      title: 'test1zz',
+    }
+  },
   data() {
     return {
       // name:""

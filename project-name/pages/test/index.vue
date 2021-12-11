@@ -31,7 +31,10 @@ export default {
       }
       
     }
-  }
+  },
+  middleware:[
+    'router-log'
+  ]
 }
 </script>
 
