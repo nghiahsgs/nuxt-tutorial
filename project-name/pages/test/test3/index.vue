@@ -15,11 +15,10 @@
       <button @click="handle_click(1)">go to test1</button>
       <button @click="handle_click(2)">go to test2</button>
 
-      <p>child 1</p>
+      <p>child 2</p>
     </ul>
 
     <h3>{{ name }}</h3>
-    <h4>{{ name2 }}</h4>
   </div>
 </template>
 
@@ -33,18 +32,27 @@ export default {
   },
   // xu ly tren server truoc khi tra ve
   asyncData(context) {
+    console.log({context})
     return new Promise((resolve, reject)=>{
       setTimeout(() => {
-        resolve({
-          name: "nghiahsgszzz000",
-        });
-      }, 5000);
+        // resolve({
+        //   name: "nghiahsgszzz000",
+        // });
+        const name = "nghiahsgszzz001"
+        context.store.dispatch('setDecksAction',name)    
+        resolve({})
+        // reject({})
+        
+      }, 3000);
     })
   },
   created() {
-    setTimeout(() => {
-      this.name2 = "nghiahsgs2";
-    }, 5000);
+    console.log('this.name',this.name)
   },
+  computed:{
+    name(){
+      return this.$store.getters.decks
+    }
+  }
 };
 </script>
