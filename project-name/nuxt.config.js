@@ -13,15 +13,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preconnect',  href: 'https://fonts.googleapis.com' },
-      { rel: 'preconnect',  href: 'https://fonts.gstatic.com' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap' }
     ]
   },
   // loading:{
   //   color:'#fff',height:'10px'
   // },
-  loading:false,
+  loading: false,
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -32,7 +32,7 @@ export default {
   plugins: [
     '@/plugins/hello.js',
     '@/plugins/fold.js',
-    '@/plugins/myFirstPlugin.js',
+    '@/plugins/myFirstPlugin.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -61,7 +61,7 @@ export default {
   // router: {
   //   middleware:'router-log'
   // },
-  server:{
-    port:8000
+  server: {
+    port: 8000
   }
 }
